@@ -1,0 +1,187 @@
+
+.login-container{
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+  .login-bg{
+    background: url("../assets/images/01.jpg") no-repeat center center;
+    background-size: cover;
+    //position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    z-index: 99;
+
+    .login-form{
+      z-index: 99;
+      //margin-left: 55%;
+      background: white;
+      border-radius: 10px;
+      width: 500px;
+      padding:40px 40px 20px;
+      box-shadow: 0 0px 4px 2px rgba(34, 39, 54, 0.2);
+      .welcome-title{
+        color: #2e2e2f;
+        font-size: 20px;
+        font-weight: bold;
+      }
+      .el-form{
+        width: 100%;
+        margin-top: 30px;
+        .el-form-item{
+          margin-bottom: 20px;
+        }
+        .el-input__inner {
+          background: transparent;
+          text-align: center;
+          color: #666;
+          border: 1px solid #aaa;
+          border-radius: 5px;
+          font-size: 18px;
+          height: 50px;
+          line-height: 50px;
+          border-radius: 30px;
+          padding-left: 15px;
+        }
+        .el-input__icon{
+          font-size: 24px;
+          color: #666;
+          margin-left: 15px;
+          line-height: 50px;
+        }
+        .login-button{
+          background-image: linear-gradient(to right, #409cf8 , #0254c3);
+          color: white;
+          display: block;
+          margin: 10px 0;
+          width: 100%;
+          height: 56px;
+          font-size: 17px;
+          border-radius: 30px;
+          border: none;
+          &:hover{
+            background-image: linear-gradient(to right, #0254c3 , #409cf8);
+          }
+        }
+        .verify-box{
+          z-index: 20;
+          cursor: pointer;
+          position: absolute;
+          right: 0;
+          top: 1px;
+          height: 48px;
+          width: 100px;
+          border-radius: 0 30px 30px 0;
+        }
+      }
+    }
+  }
+
+  .register-form{
+    z-index: 99;
+    //margin-left: 55%;
+    background: white;
+    border-radius: 10px;
+    width: 550px;
+    padding:40px 40px 20px;
+    box-shadow: 0 0px 4px 2px rgba(34, 39, 54, 0.2);
+    .welcome-title{
+      color: #2e2e2f;
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    .login-button{
+      background-image: linear-gradient(to right, #409cf8 , #0254c3);
+      color: white;
+      display: block;
+      margin: 10px 0;
+      width: 100%;
+      height: 46px;
+      font-size: 17px;
+      border-radius: 30px;
+      border: none;
+      &:hover{
+        background-image: linear-gradient(to right, #0254c3 , #409cf8);
+      }
+    }
+    .email-box{
+      .el-form-item__content{
+        display: flex;
+        flex-direction: row;
+      }
+    }
+  }
+
+
+  .title{
+    color: #1A66B2;
+    font-weight: bolder;
+    font-size: 42px;
+    text-shadow: 3px 3px 5px #aaa;
+    margin: 50px ;
+  }
+  .copy-right{
+    position: absolute;
+    bottom: 50px;
+    font-size: 16px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .nectar-video-wrap{
+    top: 0;
+    left: 0;
+    width: 100vw !important;
+    height: 100%;
+    z-index: 0;
+    overflow: hidden;
+    position: absolute;
+    padding-bottom: 0;
+    .nectar-video-inner{
+      height: 100%;
+    }
+  }
+
+
+}
+
+@media screen and (max-width: 800px){
+  .login-container .login-bg .login-form{
+    width: 350px;
+    padding: 15px;
+  }
+  #look-around{
+    display: none;
+  }
+  .login-container .login-bg .login-form .el-form .el-input__inner{
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+  }
+  .login-container .login-bg .login-form .el-form .el-input__icon{
+    line-height: 40px;
+    font-size: 20px;
+  }
+  .login-container .login-bg .login-form .el-form .verify-box{
+    height: 38px;
+  }
+  .login-container .login-bg .login-form .el-form .login-button,.login-container .register-form .login-button{
+    height: 40px;
+  }
+
+  .login-container .register-form{
+    width: 350px;
+    padding: 15px;
+  }
+}
+
+
+
+

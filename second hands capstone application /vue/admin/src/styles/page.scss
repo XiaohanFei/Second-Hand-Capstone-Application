@@ -1,0 +1,138 @@
+.app-main{
+
+  .base-person-container{
+    .person-box{
+      text-align: center;
+      .person-name{
+        font-weight: bolder;
+        font-size: 20px;
+        margin: 20px 0 40px;
+      }
+      .el-avatar{
+        margin-top: 60px;
+      }
+      .el-alert{
+        margin-top: 20px;
+      }
+    }
+
+    .el-card__body{
+      height: calc(100vh - 92px );
+      .el-tabs__item{
+        font-size: 15px;
+        font-weight: 800;
+      }
+      .el-tabs__header{
+        margin-right: 30px;
+      }
+    }
+  }
+  .admin-user-container{
+    .admin-user-dialog{
+      .title-block{
+        height: 40px;
+        line-height: 40px;
+        background: #F5F7FA;
+        color: #666;
+        border: 1px solid #ddd;
+        margin-bottom: 10px;
+        border-radius: 3px;
+        font-weight: bold;
+        padding: 0 20px;
+      }
+      .dept_auth_tree,.rule-radio{
+        width: 100%;
+        height: 400px;
+        overflow-y: auto;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 5px;
+      }
+      .rule-radio{
+        .el-radio{
+          display: block;
+          padding: 5px;
+        }
+      }
+    }
+  }
+
+  .admin-icon-container{
+    .icon-box{
+      border: 1px solid #ccc;
+      display: inline-block;
+      border-radius: 8px;
+      margin: 0px 20px 20px 0;
+    }
+
+    .icon-content{
+      width: 120px;
+      height: 90px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 40px;
+      color: black;
+    }
+    .icon-text{
+      text-align: center;
+      height: 29px;
+      line-height: 29px;
+      border-top: 1px solid #ccc;
+      font-size: 15px;
+    }
+
+  }
+
+  .admin-menu-container,.admin-organization-container{
+    .el-table{
+      td,th{
+        padding: 8px 0;
+      }
+      .el-table__expand-icon{
+        font-weight: bold;
+        font-size: 17px;
+        width: 30px;
+      }
+      .el-table__placeholder{
+        width: 32px;
+      }
+      .drag-handler{
+        font-size: 17px;
+        cursor: move;
+      }
+      .title-icon{
+        margin-left: 10px;
+        color: var(--blue);
+      }
+    }
+  }
+
+  .admin-organization-container{
+    .admin-role-dialog{
+      .title-block{
+        height: 40px;
+        line-height: 40px;
+        background: #F5F7FA;
+        color: #666;
+        border: 1px solid #ddd;
+        margin-bottom: 10px;
+        border-radius: 3px;
+        font-weight: bold;
+        padding: 0 20px;
+      }
+      .dept_auth_tree,.menu_auth_tree{
+        height: 426px;
+        overflow-y: auto;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 5px;
+      }
+      .menu_auth_tree{
+        height: 500px;
+      }
+    }
+  }
+
+
+}

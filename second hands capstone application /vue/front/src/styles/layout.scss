@@ -1,0 +1,154 @@
+.app-container{
+  clear:both;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background: var(--main);
+
+  .top-bar{
+    position: absolute;
+    top: 0;
+    left: 0px;
+    height: 90px;
+    width: 100%;
+    right: 0;
+    //background-image: url("../assets/images/header_bg.png");
+    background: rgba(75,190,216,0.8);
+    .top-bar-box{
+      width: 1300px;
+      margin: 0 auto;
+      height: 90px;
+      color: white;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      .title{
+        font-size: 26px;
+        font-weight: bold;
+        margin-right: 30px;
+        padding-bottom: 5px;
+        text-align: center;
+        font-family: cursive;
+      }
+      .menu{
+        flex: 1;
+
+      }
+      .menu-item{
+        display: inline-block;
+        padding: 0 20px;
+        height: 40px;
+        line-height: 40px;
+        cursor: pointer;
+        user-select: none;
+        &:hover{
+          border-bottom: 4px solid var(--blue);
+        }
+      }
+    }
+
+
+    .logo-title{
+      position: absolute;
+      top: 0;
+      height: 60px;
+      left: 0;
+      display: flex;
+      flex-flow: row;
+      align-items: center;
+      min-width: 200px;
+      .logo{
+        width: 45px;
+        height: 45px;
+        margin-right: 10px;
+        margin-left: 20px;
+      }
+      .title{
+        text-align: center;
+        color: #fff;
+        font-weight: bolder;
+        line-height: 1.3;
+        font-size: 24px;
+      }
+      .title.sub-title{
+        font-size: 16px;
+      }
+    }
+
+
+    .nav-main {
+      z-index: 10;
+      display: flex;
+      position: absolute;
+      bottom: 2px;
+      width: 100%;
+      .nav-span{
+        .nav-link{
+          text-decoration: none !important;
+          display: block;
+          color: #fff;
+          width: auto;
+          min-width: 100px;
+          line-height: 42px;
+          height: 36px;
+          font-size: 15px;
+          text-align: center;
+          font-weight: 700;
+          cursor: pointer;
+          padding: 0 25px;
+          user-select: none;
+        }
+        .nav-active{
+          color: var(--blue);
+        }
+      }
+    }
+
+    .name-box{
+      display: flex;
+      flex-flow: row;
+      align-items: center;
+      z-index: 20;
+      .user-name{
+        font-weight: bold;
+        font-size: 16px;
+        margin:0 15px;
+        color: #fff;
+        cursor: pointer;
+      }
+      .el-button{
+        font-size: 24px;
+        color: white;
+        padding: 8px;
+        background: transparent;
+        border: none !important;
+        &:hover{
+          background: #aaa;
+        }
+      }
+    }
+  }
+
+  .main-container {
+    transition: left .28s;
+    left: 0px;
+    position: absolute;
+    top: 90px;
+    right: 0px;
+    bottom: 0px;
+    background: #f1f1f1;
+    overflow-y: auto;
+
+  }
+
+
+
+
+}
+
+
+
+
+

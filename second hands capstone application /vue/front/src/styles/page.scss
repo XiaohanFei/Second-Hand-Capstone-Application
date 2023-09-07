@@ -1,0 +1,196 @@
+.app-main{
+
+  .main-box{
+    width: 1250px;
+    margin: 0 auto;
+    padding: 20px;
+    //background: #f1f1f1;
+  }
+
+  .home-chat-container{
+    .chat-item{
+      //white-space:nowrap;
+      overflow:hidden;
+      text-overflow:ellipsis;
+      color:#666;
+      cursor: pointer;
+      font-size: 17px;
+      -webkit-line-clamp: 2;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      line-height: 24px;
+      &:hover{
+        color:black;
+      }
+    }
+  }
+
+  .home-index-container{
+    .demo1{
+      box-shadow: 0 0px 6px 2px rgba(34, 39, 54, 0.15);
+      background: white;
+    }
+    .el-cascader-panel.is-bordered{
+      //border: 1px solid #aaa;
+    }
+    .el-cascader-menu__wrap{
+      height: 300px
+    }
+    .search-box{
+      display: flex;
+    }
+    .search-input{
+      margin-right: 15px;
+      .el-input__inner{
+        border-color: white;
+        box-shadow: 0 0px 6px 2px rgba(34, 39, 54, 0.15);
+        border: none;
+      }
+    }
+    .notice-body{
+      height: 191px;
+      box-shadow: 0 0px 6px 2px rgba(34, 39, 54, 0.15);
+      overflow-y: hidden;
+      background: white;
+      padding: 20px;
+      border-radius: 3px;
+    }
+    .notice-li{
+      white-space:nowrap;
+      overflow:hidden;
+      text-overflow:ellipsis;
+      padding: 5px 0;
+      cursor: pointer;
+      list-style:circle!important;
+      font-size: 17px;
+    }
+    .goods-item{
+      position: relative;
+      box-shadow: 0 0px 6px 2px rgba(34, 39, 54, 0.15);
+      margin-top: 20px;
+      border-radius: 10px;
+      overflow: hidden;
+      cursor: pointer;
+      background: white;
+      .goods-image{
+        height: 200px;
+        width: 100%;
+      }
+      .goods-title{
+        font-size: 18px;
+        padding:15px 8px;
+        text-align: center;
+        white-space:nowrap;
+        overflow:hidden;
+        text-overflow:ellipsis;
+        //border-top: 1px solid #ccc;
+      }
+      .good-price{
+        display: flex;
+        flex-direction: row;
+        padding: 5px 10px;
+        color: #999;
+      }
+      .goods-classify{
+        padding: 15px 0;
+        color: #999;
+        font-size: 15px;
+        text-align: center;
+      }
+    }
+  }
+
+  .home-person-container{
+    .el-tabs__content{
+      height: calc(100vh - 140px);
+      overflow-y: auto;
+    }
+    .el-tabs--left.el-tabs--border-card .el-tabs__header.is-left{
+      height: calc(100vh - 140px);
+    }
+  }
+  .home-goods-detail-container{
+    .el-tag--dark{
+      margin-right: 10px;
+      margin-bottom: 10px;
+    }
+
+    .goods-image{
+      height: 500px;
+      width: 100%;
+    }
+    .goods-image-thumb-box{
+      border: 1px solid #aaa;margin-right: 10px;border-radius: 10px;overflow: hidden;cursor: pointer;
+      height: 100px;
+      line-height: 0;
+      display: inline-block;
+    }
+    .goods-image-thumb{
+      //width: 100px;
+      height: 100px;
+      .el-image__inner{
+        height: 100px;
+        width: auto;
+      }
+    }
+    .goods-button{
+      margin-top: 20px;
+
+      display: flex;
+      flex-direction: column;
+      .el-button+.el-button{
+        margin-left: 0;
+        margin-top: 20px;
+      }
+    }
+    .box-card{
+      margin-top: 30px;
+      margin-bottom: 30px;
+      border: 1px solid #aaa;
+
+      .notice-body{
+        height: 153px;
+        line-height: 1.5;
+        letter-spacing: 2px;
+        overflow-y: auto;
+      }
+    }
+    .comment-item{
+      border-bottom: 1px solid #ccc;
+      padding:10px 0;
+      &:after{
+        display: table;
+        clear: both;
+        content: "";
+      }
+    }
+    .comment-reply{
+      //margin-top: 5px;
+      //margin-left: 20px;
+      //border-left: 3px solid #ccc;
+      //padding-left: 10px;
+      //color: #666;
+      //font-size: 15px;
+      padding: 8px 19px;
+      margin-top: 10px;
+      line-height: 20px;
+      background: #f4f4f4;
+      border: 1px solid #dedede;
+      font-size: 13px;
+    }
+
+  }
+
+  .score-container{
+    .task-box{
+      width: 100%;border: 1px solid #999;border-radius: 8px;color:#333;padding:10px 20px;
+      margin-top: 20px;
+      height: 150px;
+      .el-checkbox{
+        display: block;
+        margin-top: 8px;
+      }
+    }
+  }
+
+}
